@@ -7,11 +7,14 @@
 </head>
 <body>
     <h1>Reservasi Tempat</h1>
+    <img src="Images/tempat.png" alt="tempat" width="250"> <br> <br>
     <form action="proses.php" method="Post">
         Nama Lengkap <br>
         <input type="text" name="Nama_Lengkap" id="Nama_Lengkap" required> <br>
-        Tanggal Lahir <br>
+        Tanggal Kedatangan <br>
         <input type="date" name="Tanggal_Kedatangan" id="Tanggal_Kedatangan"> <br>
+        Nomor Telepon <br>
+        <input type="tel" name="Nomor_Telepon" id="Nomor Telepon" placeholder="08xxxxxxxxxx" inputmode="numeric"> <br>
         Lantai <br>
         <input type="radio" name="L" id="lt1" value="1"> 
         Lantai 1 <br>
@@ -24,7 +27,9 @@
             <option value="02">14.00 WIB</option>
             <option value="04">16.00 WIB</option>
             <option value="06">18.00 WIB</option>
-        </select> <br> <br>
+        </select> <br>
+        Pesan <br>
+        <textarea name="Pesan" id="Pesan" placeholder="Tuliskan Rincian Reservasi.."></textarea> <br>
         <button type="submit">Kirim</button>
 
     </form>
