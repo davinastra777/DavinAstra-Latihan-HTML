@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=title, initial-scale=1.0">
+    <title>Reservasi</title>
+</head>
+<body>
+    <h1>Reservasi Tempat</h1>
+    <form action="proses.php" method="Post">
+        Nama Lengkap <br>
+        <input type="text" name="Nama_Lengkap" id="Nama_Lengkap" required> <br>
+        Tanggal Lahir <br>
+        <input type="date" name="Tanggal_Kedatangan" id="Tanggal_Kedatangan"> <br>
+        Lantai <br>
+        <input type="radio" name="L" id="lt1" value="1"> 
+        Lantai 1 <br>
+        <input type="radio" name="L" id="lt2" value="2"> 
+        Lantai 2 <br>
+        Jam Kedatangan <br>
+        <select name="Jam_Kedatangan" id="Jam_Kedatangan">
+            <option value="10">10.00 WIB</option>
+            <option value="12">12.00 WIB</option>
+            <option value="02">14.00 WIB</option>
+            <option value="04">16.00 WIB</option>
+            <option value="06">18.00 WIB</option>
+        </select> <br> <br>
+        <button type="submit">Kirim</button>
+
+    </form>
+</body>
+</html>
